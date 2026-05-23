@@ -1,0 +1,548 @@
+/* ============================================
+   General Styles
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* ============================================
+   Navigation Bar
+   ============================================ */
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #0066cc;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+}
+
+/* ============================================
+   Header Section
+   ============================================ */
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.header-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #667eea;
+}
+
+/* ============================================
+   Main Content Container
+   ============================================ */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ============================================
+   Page Header (for non-home pages)
+   ============================================ */
+
+.page-header {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+
+.about-section {
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* ============================================
+   Education Section
+   ============================================ */
+
+.education-section {
+    margin-bottom: 60px;
+}
+
+.education-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.education-item {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid #0066cc;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.education-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.institution {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.details {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   Research Section
+   ============================================ */
+
+.research-overview {
+    margin-bottom: 50px;
+}
+
+.research-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.research-overview p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.research-topics {
+    margin-bottom: 50px;
+}
+
+.research-topics h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.research-topic {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #667eea;
+}
+
+.research-topic h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.research-topic p {
+    margin-bottom: 12px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.collaborations {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.collaborations h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.collaborations ul {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.collaborations li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.collaborations a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.collaborations a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   Publications Section
+   ============================================ */
+
+.publication-links {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.publication-links p {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.publication-links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publication-links li {
+    margin-bottom: 10px;
+}
+
+.publication-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.publication-links a:hover {
+    text-decoration: underline;
+}
+
+.publications {
+    margin-bottom: 50px;
+}
+
+.publications h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+.publication-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #764ba2;
+    transition: box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.publication-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.publication-item h3 a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.publication-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.authors {
+    color: #666;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.publication-info {
+    color: #777;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.publication-abstract {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.publication-item .publication-links {
+    background: #f5f5f5;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: none;
+}
+
+.publication-item .publication-links a {
+    display: inline;
+    margin-right: 5px;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 15px;
+        font-size: 0.95rem;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+    .research-topic p {
+        text-align: left;
+    }
+
+    .publication-abstract {
+        text-align: left;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .header-links {
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .research-topic,
+    .publication-item,
+    .education-item {
+        padding: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+}

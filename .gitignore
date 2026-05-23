@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+.Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.atom/
+
+# Node modules (if you decide to add build tools later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Local development
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+*.min.css
+*.min.js
