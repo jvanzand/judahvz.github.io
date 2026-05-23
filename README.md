@@ -1,4 +1,4 @@
-# Judah Vanderplas - Research Website
+# Judah Van Zandt - Research Website
 
 A clean, professional research website built with HTML, CSS, and vanilla JavaScript. This site follows modern web design principles and is fully responsive.
 
